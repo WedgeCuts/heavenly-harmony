@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "GF IDLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				59,
+				-3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "GF LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				52,
+				46
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "GF LEFT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-86,
+				-9
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "GF RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-85,
+				20
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "GF RIGHT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				-10
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "GF DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				42
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "GF DOWN MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				11
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "GF UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				39
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "GF UP MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				4
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "GF HEY",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/gf-pinoy",
+	"position": [
+		0,
+		110
+	],
+	"healthicon": "pinoygf",
+	"flip_x": true,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		70,
+		60
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

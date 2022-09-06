@@ -1,0 +1,41 @@
+{
+	"songs": [
+		[
+			"Wistful",
+			"althea",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"Heavenbound",
+			"althea",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "Heavenly Harmony",
+	"weekName": "Heavenly Harmony",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
