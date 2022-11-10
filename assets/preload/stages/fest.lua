@@ -7,11 +7,18 @@ local followchars = true
 
 function onCreate()
 	-- background shit
-	makeLuaSprite('bg', 'bg/bg-day', -600, -200)
-	--setScrollFactor('bg', 0.7, 0.7)
-	--scaleObject('bg', 1.5, 1.5)
+	makeLuaSprite('bg', 'bg/morningbg', -600, -200)
+	makeLuaSprite('stands', 'bg/morningstands', -600, -200)
+	makeLuaSprite('stage', 'bg/morningstage', -600, -200)
 
+	makeLuaSprite('bopbg', 'bg/bgboppers', -600, -200)
+	makeLuaSprite('bopfg', 'bg/fgboppers', -600, -200)
+	
 	addLuaSprite('bg', false)
+	addLuaSprite('stands', false)
+	addLuaSprite('bopbg', false)
+	addLuaSprite('stage', false)
+	addLuaSprite('bopfg', true)
 	
 end
 
@@ -53,4 +60,12 @@ function onUpdate()
 		else
 			triggerEvent('Camera Follow Pos','','')
 		end
+end
+
+function onBeatHit()
+	--BG chars boppin!
+	setProperty('bopbg.y',getProperty('bopbg.y')+5)
+	doTweenY('charbounce1','bopbg',getProperty('bopbg.y')-5,0.15,'circOut')
+	setProperty('bopfg.y',getProperty('bopfg.y')+20)
+	doTweenY('charbounce2','bopfg',getProperty('bopfg.y')-20,0.15,'circOut')
 end
