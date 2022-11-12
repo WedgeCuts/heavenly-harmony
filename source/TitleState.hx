@@ -37,6 +37,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.app.Application;
 import openfl.Assets;
+import flixel.addons.display.FlxBackdrop;
 
 using StringTools;
 typedef TitleData =
@@ -236,6 +237,7 @@ class TitleState extends MusicBeatState
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	var swagShader:ColorSwap = null;
+	var backdrop:FlxBackdrop;
 
 	function startIntro()
 	{
@@ -282,6 +284,15 @@ class TitleState extends MusicBeatState
 		// bg.setGraphicSize(Std.int(bg.width * 0.6));
 		// bg.updateHitbox();
 		add(bg);
+		
+		backdrop = new FlxBackdrop(Paths.image('menus/scrollbg'), 1.0, 1.0, true, true);
+		add(backdrop);
+		
+		var render:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('menus/althea-render'));
+		render.scrollFactor.set(0, 0);
+		render.screenCenter();
+		render.antialiasing = ClientPrefs.globalAntialiasing;
+		add(render);
 
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
@@ -290,6 +301,7 @@ class TitleState extends MusicBeatState
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
 		logoBl.animation.play('bump');
 		logoBl.screenCenter();
+		logoBl.x = 600;
 		logoBl.updateHitbox();
 		// logoBl.color = FlxColor.BLACK;
 
@@ -375,7 +387,7 @@ class TitleState extends MusicBeatState
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
 		// titleText.screenCenter(X);
-		add(titleText);
+		//add(titleText);
 
 		var logo:FlxSprite = new FlxSprite().loadGraphic(Paths.image('logo'));
 		logo.screenCenter();
@@ -486,16 +498,16 @@ class TitleState extends MusicBeatState
 				
 				timer = FlxEase.quadInOut(timer);
 				
-				titleText.color = FlxColor.interpolate(titleTextColors[0], titleTextColors[1], timer);
-				titleText.alpha = FlxMath.lerp(titleTextAlphas[0], titleTextAlphas[1], timer);
+				//titleText.color = FlxColor.interpolate(titleTextColors[0], titleTextColors[1], timer);
+				//titleText.alpha = FlxMath.lerp(titleTextAlphas[0], titleTextAlphas[1], timer);
 			}
 			
 			if(pressedEnter)
 			{
-				titleText.color = FlxColor.WHITE;
-				titleText.alpha = 1;
+				//titleText.color = FlxColor.WHITE;
+				//titleText.alpha = 1;
 				
-				if(titleText != null) titleText.animation.play('press');
+				//if(titleText != null) titleText.animation.play('press');
 
 				FlxG.camera.flash(ClientPrefs.flashing ? FlxColor.WHITE : 0x4CFFFFFF, 1);
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
@@ -578,6 +590,9 @@ class TitleState extends MusicBeatState
 		}
 
 		super.update(elapsed);
+		
+		if (initialized)
+			backdrop.x += 1.5*(elapsed/(1.5/120));
 	}
 
 	function createCoolText(textArray:Array<String>, ?offset:Float = 0)

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Crowd_bop.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="crowd_bop0000" x="20" y="20" width="2121" height="409"/>
+	<SubTexture name="crowd_bop0001" x="20" y="20" width="2121" height="409"/>
+	<SubTexture name="crowd_bop0002" x="20" y="449" width="2118" height="403" frameX="-2" frameY="-6" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0003" x="20" y="449" width="2118" height="403" frameX="-2" frameY="-6" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0004" x="20" y="872" width="2115" height="402" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0005" x="20" y="872" width="2115" height="402" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0006" x="20" y="872" width="2115" height="402" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0007" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0008" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0009" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0010" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0011" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0012" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0013" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+	<SubTexture name="crowd_bop0014" x="20" y="1294" width="2114" height="401" frameX="-3" frameY="-7" frameWidth="2121" frameHeight="409"/>
+</TextureAtlas>
