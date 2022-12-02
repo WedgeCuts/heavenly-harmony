@@ -238,6 +238,7 @@ class TitleState extends MusicBeatState
 	var titleText:FlxSprite;
 	var swagShader:ColorSwap = null;
 	var backdrop:FlxBackdrop;
+	var render:FlxSprite;
 
 	function startIntro()
 	{
@@ -269,7 +270,7 @@ class TitleState extends MusicBeatState
 			}
 		}
 
-		Conductor.changeBPM(titleJSON.bpm);
+		Conductor.changeBPM(130);
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite();
@@ -288,9 +289,8 @@ class TitleState extends MusicBeatState
 		backdrop = new FlxBackdrop(Paths.image('menus/scrollbg'), 1.0, 1.0, true, true);
 		add(backdrop);
 		
-		var render:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('menus/althea-render'));
-		render.scrollFactor.set(0, 0);
-		render.screenCenter();
+		render = new FlxSprite(-750, 0).loadGraphic(Paths.image('menus/althea-render'));
+		render.scrollFactor.set(1, 0);
 		render.antialiasing = ClientPrefs.globalAntialiasing;
 		add(render);
 
@@ -705,13 +705,13 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 14:
-					addMoreText('Friday');
+					addMoreText('FNF');
 				// credTextShit.visible = true;
 				case 15:
-					addMoreText('Night');
+					addMoreText('Heavenly');
 				// credTextShit.text += '\nNight';
 				case 16:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Harmony'); // credTextShit.text += '\nFunkin';
 
 				case 17:
 					skipIntro();
@@ -784,6 +784,8 @@ class TitleState extends MusicBeatState
 				remove(ngSpr);
 				remove(credGroup);
 				FlxG.camera.flash(FlxColor.WHITE, 4);
+				
+				FlxTween.tween(render, {x: 0}, 0.7, {ease: FlxEase.quartInOut, startDelay: 1});
 
 				var easteregg:String = FlxG.save.data.psychDevsEasterEgg;
 				if (easteregg == null) easteregg = '';

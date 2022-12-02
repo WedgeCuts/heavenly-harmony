@@ -78,6 +78,18 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 		
+		var foto:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('menus/fotos/foto' + FlxG.random.int(0,1))); //randomizer
+		foto.scrollFactor.set(0, 0);
+		foto.screenCenter();
+		foto.antialiasing = ClientPrefs.globalAntialiasing;
+		add(foto);
+		
+		var over:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('menus/menuoverlay'));
+		over.scrollFactor.set(0, 0);
+		over.screenCenter();
+		over.antialiasing = ClientPrefs.globalAntialiasing;
+		add(over);
+		
 		var pamphlet:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('menus/pamphlet'));
 		pamphlet.scrollFactor.set(0, 0);
 		pamphlet.screenCenter();
@@ -122,11 +134,11 @@ class MainMenuState extends MusicBeatState
 
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat(Paths.font("burobu.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat(Paths.font("GhostKidAOE.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Heavenly Harmony v.0.1-earlydev", 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat(Paths.font("burobu.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat(Paths.font("GhostKidAOE.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 
 		// NG.core.calls.event.logEvent('swag').send();
