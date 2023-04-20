@@ -174,6 +174,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var bgFade:FlxSprite = null;
 	var box:FlxSprite;
 	var textToType:String = '';
+	var background:FlxSprite;
 
 	var arrayCharacters:Array<DialogueCharacter> = [];
 
@@ -199,11 +200,20 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade.visible = true;
 		bgFade.alpha = 0;
 		add(bgFade);
+		
+		background = new FlxSprite(0,0);
+		background.loadGraphic(Paths.image('dialogue/bgs/cutscene1')); //placeholder
+		background.setGraphicSize(1280,720);
+		background.updateHitbox();
+		background.screenCenter();
+		background.antialiasing = true;
+		add(background);
+		background.alpha = 0;
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
 
-		box = new FlxSprite(70, 370);
+		box = new FlxSprite(0, 0);
 		box.frames = Paths.getSparrowAtlas('speech_bubble');
 		box.scrollFactor.set();
 		box.antialiasing = ClientPrefs.globalAntialiasing;
@@ -217,7 +227,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		box.animation.addByPrefix('center-angryOpen', 'speech bubble Middle loud open', 24, false);
 		box.animation.play('normal', true);
 		box.visible = false;
-		box.setGraphicSize(Std.int(box.width * 0.9));
+		//box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
 
@@ -282,8 +292,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 	}
 
-	public static var DEFAULT_TEXT_X = 180;
-	public static var DEFAULT_TEXT_Y = 432;
+	public static var DEFAULT_TEXT_X = 250;
+	public static var DEFAULT_TEXT_Y = 380;
 	var scrollSpeed = 4000;
 	var daText:TypedAlphabet = null;
 	var ignoreThisFrame:Bool = true; //First frame is reserved for loading dialogue images
@@ -453,6 +463,22 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		do {
 			curDialogue = dialogueList.dialogue[currentText];
 		} while(curDialogue == null);
+		
+		//im too lazy but this does the background lol
+		//
+		if(curDialogue.sound != "none"){
+			remove(background);
+			background.loadGraphic(Paths.image('dialogue/bgs/' + curDialogue.sound));
+			background.setGraphicSize(1280,720);
+			background.updateHitbox();
+			background.screenCenter();
+			background.alpha = 1;
+			background.antialiasing = true;
+			add(background);
+		}
+		else{
+			background.alpha = 0;
+		}
 
 		if(curDialogue.text == null || curDialogue.text.length < 1) curDialogue.text = ' ';
 		if(curDialogue.boxState == null) curDialogue.boxState = 'normal';
@@ -481,7 +507,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		if(character != lastCharacter) {
 			box.animation.play(centerPrefix + boxType + 'Open', true);
 			updateBoxOffsets(box);
-			box.flipX = (lePosition == 'left');
+			//box.flipX = (lePosition == 'left');
 		} else if(boxType != lastBoxType) {
 			box.animation.play(centerPrefix + boxType, true);
 			updateBoxOffsets(box);
@@ -490,8 +516,10 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		lastBoxType = boxType;
 
 		daText.text = curDialogue.text;
-		daText.sound = curDialogue.sound;
-		if(daText.sound == null) daText.sound = 'dialogue';
+		//daText.sound = curDialogue.sound;
+		//if(daText.sound == null) 
+		//resets da sound to the default sfx cuz its stoopid
+		daText.sound = 'dialogue';
 
 		var char:DialogueCharacter = arrayCharacters[character];
 		if(char != null) {
@@ -523,7 +551,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public static function updateBoxOffsets(box:FlxSprite) { //Had to make it static because of the editors
 		box.centerOffsets();
 		box.updateHitbox();
-		if(box.animation.curAnim.name.startsWith('angry')) {
+		/*if(box.animation.curAnim.name.startsWith('angry')) {
 			box.offset.set(50, 65);
 		} else if(box.animation.curAnim.name.startsWith('center-angry')) {
 			box.offset.set(50, 30);
@@ -531,6 +559,13 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			box.offset.set(10, 0);
 		}
 		
-		if(!box.flipX) box.offset.y += 10;
+		if(!box.flipX) box.offset.y += 10;*/
+		
+		if(box.animation.curAnim.name.startsWith('center') || box.animation.curAnim.name.startsWith('center-angry')) {
+			box.alpha = 0;
+		}
+		else{
+			box.alpha = 1;
+		}
 	}
 }

@@ -17,16 +17,26 @@
 				113,
 				253
 			]
+		],
+		[
+			"Revelation",
+			"althea",
+			[
+				146,
+				113,
+				253
+			]
 		]
+		
 	],
 	"hiddenUntilUnlocked": false,
 	"hideFreeplay": false,
-	"weekBackground": "stage",
-	"difficulties": "",
+	"weekBackground": "",
+	"difficulties": "Hard",
 	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
+		"",
+		"",
+		""
 	],
 	"storyName": "Heavenly Harmony",
 	"weekName": "Heavenly Harmony",

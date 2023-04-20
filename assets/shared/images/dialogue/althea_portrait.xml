@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="althea_portrait.png">
+<SubTexture name="althea_portrait idle0000" x="0" y="0" width="451" height="436" frameX="0" frameY="0" frameWidth="451" frameHeight="436" />
+<SubTexture name="althea_portrait huh0000" x="451" y="0" width="451" height="436" frameX="0" frameY="0" frameWidth="451" frameHeight="436" />
+<SubTexture name="althea_portrait hmm0000" x="0" y="436" width="451" height="436" frameX="0" frameY="0" frameWidth="451" frameHeight="436" />
+<SubTexture name="althea_portrait angel idle0000" x="451" y="436" width="431" height="477" frameX="0" frameY="0" frameWidth="431" frameHeight="477" />
+<SubTexture name="althea_portrait angel huh0000" x="0" y="913" width="431" height="477" frameX="0" frameY="0" frameWidth="431" frameHeight="477" />
+<SubTexture name="althea_portrait angel hmm0000" x="431" y="913" width="431" height="477" frameX="0" frameY="0" frameWidth="431" frameHeight="477" />
+<SubTexture name="althea_portrait angel what0000" x="0" y="1390" width="592" height="463" frameX="0" frameY="0" frameWidth="592" frameHeight="463" />
+<SubTexture name="althea_portrait angel cry0000" x="592" y="1390" width="592" height="463" frameX="0" frameY="0" frameWidth="592" frameHeight="463" />
+</TextureAtlas>

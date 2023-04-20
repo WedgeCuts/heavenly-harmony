@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="gf_portrait.png">
+<SubTexture name="gf_portrait idle0000" x="0" y="0" width="435" height="459" frameX="0" frameY="0" frameWidth="435" frameHeight="459" />
+<SubTexture name="gf_portrait hype0000" x="435" y="0" width="435" height="459" frameX="0" frameY="0" frameWidth="435" frameHeight="459" />
+<SubTexture name="gf_portrait huh0000" x="0" y="459" width="435" height="459" frameX="0" frameY="0" frameWidth="435" frameHeight="459" />
+<SubTexture name="gf_portrait demon idle0000" x="435" y="459" width="484" height="465" frameX="0" frameY="0" frameWidth="484" frameHeight="465" />
+<SubTexture name="gf_portrait demon happy0000" x="0" y="924" width="517" height="421" frameX="0" frameY="0" frameWidth="517" frameHeight="421" />
+<SubTexture name="gf_portrait demon hype0000" x="517" y="924" width="484" height="465" frameX="0" frameY="0" frameWidth="484" frameHeight="465" />
+</TextureAtlas>

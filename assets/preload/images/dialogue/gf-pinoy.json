@@ -1,0 +1,89 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		60,
+		-60
+	],
+	"scale": 1.25,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "gf_portrait idle",
+			"idle_name": "gf_portrait idle"
+		},
+		{
+			"loop_name": "gf_portrait hype",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "gf_portrait hype",
+			"anim": "hype",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "gf_portrait huh",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "gf_portrait huh",
+			"anim": "huh",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "gf_portrait demon idle",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "gf_portrait demon idle",
+			"anim": "demon-talk",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "gf_portrait demon happy",
+			"idle_offsets": [
+				20,
+				-20
+			],
+			"idle_name": "gf_portrait demon happy",
+			"anim": "demon-happy",
+			"loop_offsets": [
+				20,
+				-20
+			]
+		},
+		{
+			"loop_name": "gf_portrait demon hype",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "gf_portrait demon hype",
+			"anim": "demon-hype",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "gf_portrait"
+}

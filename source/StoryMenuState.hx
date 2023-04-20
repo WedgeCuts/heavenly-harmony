@@ -17,6 +17,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import flixel.graphics.FlxGraphic;
+import flixel.effects.FlxFlicker;
 import WeekData;
 
 using StringTools;
@@ -46,6 +47,9 @@ class StoryMenuState extends MusicBeatState
 	var sprDifficulty:FlxSprite;
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
+	
+	var bg:FlxSprite;
+	var weektree:FlxSprite;
 
 	var loadedWeeks:Array<WeekData> = [];
 
@@ -59,8 +63,8 @@ class StoryMenuState extends MusicBeatState
 		if(curWeek >= WeekData.weeksList.length) curWeek = 0;
 		persistentUpdate = persistentDraw = true;
 
-		scoreText = new FlxText(10, 10, 0, "SCORE: 49324858", 36);
-		scoreText.setFormat("VCR OSD Mono", 32);
+		scoreText = new FlxText(245, 8, 0, "49324858", 36);
+		scoreText.setFormat(Paths.font("GhostKidAOE.otf"), 50, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 
 		txtWeekTitle = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
 		txtWeekTitle.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, RIGHT);
@@ -179,8 +183,19 @@ class StoryMenuState extends MusicBeatState
 		txtTracklist.color = 0xFFe55777;
 		add(txtTracklist);
 		// add(rankText);
-		add(scoreText);
 		add(txtWeekTitle);
+		
+		bg = new FlxSprite().loadGraphic(Paths.image('menus/storyy/storymode1'));
+		bg.antialiasing = ClientPrefs.globalAntialiasing;
+		add(bg);
+		bg.screenCenter();
+		
+		weektree = new FlxSprite().loadGraphic(Paths.image('menus/storyy/storymode2'));
+		weektree.antialiasing = ClientPrefs.globalAntialiasing;
+		add(weektree);
+		weektree.screenCenter();
+		
+		add(scoreText);
 
 		changeWeek();
 		changeDifficulty();
@@ -200,7 +215,7 @@ class StoryMenuState extends MusicBeatState
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 30, 0, 1)));
 		if(Math.abs(intendedScore - lerpScore) < 10) lerpScore = intendedScore;
 
-		scoreText.text = "WEEK SCORE:" + lerpScore;
+		scoreText.text = "" + lerpScore;
 
 		// FlxG.watch.addQuick('font', scoreText.font);
 
@@ -289,7 +304,8 @@ class StoryMenuState extends MusicBeatState
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
-				grpWeekText.members[curWeek].startFlashing();
+				//grpWeekText.members[curWeek].startFlashing();
+				FlxFlicker.flicker(weektree, 1, 0.06, false, false);
 
 				var bf:MenuCharacter = grpWeekCharacters.members[1];
 				if(bf.character != '' && bf.hasConfirmAnimation) grpWeekCharacters.members[1].animation.play('confirm');

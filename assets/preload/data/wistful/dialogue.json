@@ -1,0 +1,156 @@
+{
+	"dialogue": [
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "talk"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "huh",
+			"text": "huh"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "hmm",
+			"text": "hmm"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-talk",
+			"text": "talk"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-huh",
+			"text": "huh"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-hmm",
+			"text": "hmm"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-what",
+			"text": "what"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-cry",
+			"text": "cry"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "talk"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "hype",
+			"text": "hype"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "huh",
+			"text": "huh"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "demon-talk",
+			"text": "talk"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "demon-happy",
+			"text": "happy"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "demon-hype",
+			"text": "hype"
+		},
+		{
+			"sound": "cutscene1",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "cutscene2",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "cutscene3",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "cutscene4",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "cutscene5",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		}
+	]
+}

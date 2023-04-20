@@ -112,14 +112,14 @@ class DialogueCharacterEditorState extends MusicBeatState
 		ghostIdle.cameras = [camGame];
 		add(ghostIdle);
 
-		box = new FlxSprite(70, 370);
+		box = new FlxSprite(0, 0);
 		box.frames = Paths.getSparrowAtlas('speech_bubble');
 		box.scrollFactor.set();
 		box.antialiasing = ClientPrefs.globalAntialiasing;
 		box.animation.addByPrefix('normal', 'speech bubble normal', 24);
 		box.animation.addByPrefix('center', 'speech bubble middle', 24);
 		box.animation.play('normal', true);
-		box.setGraphicSize(Std.int(box.width * 0.9));
+		//box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		hudGroup.add(box);
 
@@ -469,11 +469,11 @@ class DialogueCharacterEditorState extends MusicBeatState
 	}
 
 	function updateTextBox() {
-		box.flipX = false;
+		box.flipX = true;
 		var anim:String = 'normal';
 		switch(character.jsonFile.dialogue_pos) {
 			case 'left':
-				box.flipX = true;
+				box.flipX = false;
 			case 'center':
 				anim = 'center';
 		}

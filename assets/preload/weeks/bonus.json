@@ -1,0 +1,32 @@
+{
+	"songs": [
+		[
+			"Chikahan",
+			"althea",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "Hard",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "Heavenly Harmony",
+	"weekName": "Heavenly Harmony",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "pinoyweek",
+	"startUnlocked": true
+}

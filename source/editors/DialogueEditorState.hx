@@ -69,7 +69,7 @@ class DialogueEditorState extends MusicBeatState
 		character.scrollFactor.set();
 		add(character);
 
-		box = new FlxSprite(70, 370);
+		box = new FlxSprite(0, 0);
 		box.frames = Paths.getSparrowAtlas('speech_bubble');
 		box.scrollFactor.set();
 		box.antialiasing = ClientPrefs.globalAntialiasing;
@@ -78,7 +78,7 @@ class DialogueEditorState extends MusicBeatState
 		box.animation.addByPrefix('center', 'speech bubble middle', 24);
 		box.animation.addByPrefix('center-angry', 'AHH Speech Bubble middle', 24);
 		box.animation.play('normal', true);
-		box.setGraphicSize(Std.int(box.width * 0.9));
+		//box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		add(box);
 
@@ -184,8 +184,6 @@ class DialogueEditorState extends MusicBeatState
 		var anim:String = isAngry ? 'angry' : 'normal';
 
 		switch(character.jsonFile.dialogue_pos) {
-			case 'left':
-				box.flipX = true;
 			case 'center':
 				if(isAngry) {
 					anim = 'center-angry';
