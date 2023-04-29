@@ -6,19 +6,22 @@ local ofs = 50
 local followchars = true
 
 function onCreate()
-	-- background shit
-	makeLuaSprite('bg', 'bg/morningbg', -600, -200)
-	makeLuaSprite('stands', 'bg/morningstands', -600, -200)
-	makeLuaSprite('stage', 'bg/morningstage', -600, -200)
+	-- background shit, reuse it and stuff if needed
+	makeLuaSprite('bg', 'bg/noon-bg', -600, -200)
+	makeLuaSprite('lechon', 'bg/noon-lechon', -600, -200)
+	makeLuaSprite('stalls', 'bg/noon-stalls', -600, -200)
+	makeLuaSprite('banderitas', 'bg/noon-yay', -600, -200)
+	setScrollFactor('banderitas', 0.3, 0.3)
 
 	makeLuaSprite('bopbg', 'bg/bgboppers', -600, -200)
 	makeLuaSprite('bopfg', 'bg/fgboppers', -600, -200)
 	
 	addLuaSprite('bg', false)
-	addLuaSprite('stands', false)
-	addLuaSprite('bopbg', false)
-	addLuaSprite('stage', false)
+	addLuaSprite('lechon', false)
+	addLuaSprite('stalls', false)
+	addLuaSprite('banderitas', false)
 	addLuaSprite('bopfg', true)
+	addLuaSprite('banderitas', true)
 	
 end
 

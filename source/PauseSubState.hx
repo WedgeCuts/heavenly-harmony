@@ -85,8 +85,8 @@ class PauseSubState extends MusicBeatSubstate
 		bg.scrollFactor.set();
 		add(bg);
 		
-		//shmoove
-		var render:FlxSprite = new FlxSprite(954, 0).loadGraphic(Paths.image('menus/pause/rendart1')); //maybe randomized?
+		//pause art shmooves in
+		var render:FlxSprite = new FlxSprite(954, 0).loadGraphic(Paths.image('menus/pause/' + PlayState.SONG.song)); //maybe randomized?
 		render.scrollFactor.set(0, 0);
 		render.updateHitbox();
 		render.antialiasing = ClientPrefs.globalAntialiasing;
