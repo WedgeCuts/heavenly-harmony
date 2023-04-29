@@ -140,7 +140,6 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 			smallIcon.scale.set(0.6,0.6);
 			smallIcon.antialiasing = true;
 			smallIcon.updateHitbox();
-			
 			//look man im tired
 			switch(i)
 			{
@@ -202,8 +201,8 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 					smallIcon.x = 591;
 					smallIcon.y = 510;
 				default:
-					smallIcon.x = 0;
-					smallIcon.y = 0;
+					smallIcon.x = -400;
+					smallIcon.y = -400;
 			}
 			
 			add(smallIcon);
@@ -226,19 +225,19 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 		stars = new FlxSprite().loadGraphic(Paths.image('menus/credits/credits_stars'));
 		add(stars);
 		
-		nameText = new FlxText(850, 400, 1180, "", 32);
+		nameText = new FlxText(860, 400, 1180, "", 32);
 		nameText.setFormat(Paths.font("GhostKidAOE.otf"), 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		nameText.scrollFactor.set();
 		nameText.borderSize = 1.2;
 		add(nameText);
 		
-		roleText = new FlxText(850, 430, 1180, "", 32);
+		roleText = new FlxText(860, 430, 400, "", 32);
 		roleText.setFormat(Paths.font("GhostKidAOE.otf"), 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		roleText.scrollFactor.set();
 		roleText.borderSize = 1.2;
 		add(roleText);
 
-		quoteText = new FlxText(900, 480, 350, "", 32);
+		quoteText = new FlxText(860, 520, 400, "", 30);
 		quoteText.setFormat(Paths.font("GhostKidAOE.otf"), 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		quoteText.scrollFactor.set();
 		quoteText.borderSize = 1.2;

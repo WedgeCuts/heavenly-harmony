@@ -183,6 +183,7 @@ class StoryMenuState extends MusicBeatState
 		txtTracklist.color = 0xFFe55777;
 		add(txtTracklist);
 		// add(rankText);
+				 
 		add(txtWeekTitle);
 		
 		bg = new FlxSprite().loadGraphic(Paths.image('menus/storyy/storymode1'));
@@ -308,7 +309,12 @@ class StoryMenuState extends MusicBeatState
 				FlxFlicker.flicker(weektree, 1, 0.06, false, false);
 
 				var bf:MenuCharacter = grpWeekCharacters.members[1];
+	 
 				if(bf.character != '' && bf.hasConfirmAnimation) grpWeekCharacters.members[1].animation.play('confirm');
+	  
+									 
+	  
+	 
 				stopspamming = true;
 			}
 

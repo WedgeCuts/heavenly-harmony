@@ -112,14 +112,14 @@ class DialogueCharacterEditorState extends MusicBeatState
 		ghostIdle.cameras = [camGame];
 		add(ghostIdle);
 
-		box = new FlxSprite(0, 0);
+		box = new FlxSprite(70, 370);
 		box.frames = Paths.getSparrowAtlas('speech_bubble');
 		box.scrollFactor.set();
 		box.antialiasing = ClientPrefs.globalAntialiasing;
 		box.animation.addByPrefix('normal', 'speech bubble normal', 24);
 		box.animation.addByPrefix('center', 'speech bubble middle', 24);
 		box.animation.play('normal', true);
-		//box.setGraphicSize(Std.int(box.width * 0.9));
+		box.setGraphicSize(Std.int(box.width * 0.9));
 		box.updateHitbox();
 		hudGroup.add(box);
 
@@ -151,7 +151,12 @@ class DialogueCharacterEditorState extends MusicBeatState
 
 		reloadCharacter();
 		updateTextBox();
-		reloadText();
+
+		daText = new TypedAlphabet(DialogueBoxPsych.DEFAULT_TEXT_X, DialogueBoxPsych.DEFAULT_TEXT_Y, '', 0.05, false);
+		daText.scaleX = 0.7;
+		daText.scaleY = 0.7;
+		daText.text = DEFAULT_TEXT;
+		hudGroup.add(daText);
 
 		addEditorBox();
 		FlxG.mouse.visible = true;
@@ -415,17 +420,6 @@ class DialogueCharacterEditorState extends MusicBeatState
 	}
 
 	private static var DEFAULT_TEXT:String = 'Lorem ipsum dolor sit amet';
-	function reloadText() {
-		if(daText != null) {
-			daText.kill();
-			hudGroup.remove(daText);
-			daText.destroy();
-		}
-		daText = new TypedAlphabet(DialogueBoxPsych.DEFAULT_TEXT_X, DialogueBoxPsych.DEFAULT_TEXT_Y, DEFAULT_TEXT, 0.05, false);
-		daText.scaleX = 0.7;
-		daText.scaleY = 0.7;
-		hudGroup.add(daText);
-	}
 
 	function reloadCharacter() {
 		var charsArray:Array<DialogueCharacter> = [character, ghostLoop, ghostIdle];
@@ -469,11 +463,11 @@ class DialogueCharacterEditorState extends MusicBeatState
 	}
 
 	function updateTextBox() {
-		box.flipX = true;
+		box.flipX = false;
 		var anim:String = 'normal';
 		switch(character.jsonFile.dialogue_pos) {
 			case 'left':
-				box.flipX = false;
+				box.flipX = true;
 			case 'center':
 				anim = 'center';
 		}
@@ -537,8 +531,8 @@ class DialogueCharacterEditorState extends MusicBeatState
 			FlxG.sound.volumeUpKeys = TitleState.volumeUpKeys;
 			if(FlxG.keys.justPressed.SPACE && UI_mainbox.selected_tab_id == 'Character') {
 				character.playAnim(character.jsonFile.animations[curAnim].anim);
+				daText.resetDialogue();
 				updateTextBox();
-				reloadText();
 			}
 
 			//lots of Ifs lol get trolled
@@ -643,7 +637,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 					offsetIdleText.visible = false;
 					animText.visible = true;
 					updateTextBox();
-					reloadText();
+					daText.resetDialogue();
 					
 					if(curAnim < 0) curAnim = character.jsonFile.animations.length - 1;
 					else if(curAnim >= character.jsonFile.animations.length) curAnim = 0;
@@ -726,7 +720,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 					reloadAnimationsDropDown();
 					updateCharTypeBox();
 					updateTextBox();
-					reloadText();
+					daText.resetDialogue();
 					imageInputText.text = character.jsonFile.image;
 					scaleStepper.value = character.jsonFile.scale;
 					xStepper.value = character.jsonFile.position[0];

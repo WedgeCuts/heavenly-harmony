@@ -154,10 +154,13 @@ class FreeplayState extends MusicBeatState
 
 		scoreBG = new FlxSprite(scoreText.x - 6, 0).makeGraphic(1, 66, 0xFF000000);
 		scoreBG.alpha = 0.6;
+			   
 
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
 		diffText.font = scoreText.font;
 		add(diffText);
+
+				 
 
 		//if(curSelected >= songs.length) curSelected = 0;
 		//bg.color = songs[curSelected].color;
@@ -168,6 +171,9 @@ class FreeplayState extends MusicBeatState
 			lastDifficultyName = CoolUtil.defaultDifficulty;
 		}
 		curDifficulty = Math.round(Math.max(0, CoolUtil.defaultDifficulties.indexOf(lastDifficultyName)));
+  
+					
+			   
 
 		var swag:Alphabet = new Alphabet(1, 0, "swag");
 
@@ -498,6 +504,7 @@ class FreeplayState extends MusicBeatState
 			curSelected = songs.length - 1;
 		if (curSelected >= songs.length)
 			curSelected = 0;
+   
 		/*var newColor:Int = songs[curSelected].color;
 		if(newColor != intendedColor) {
 			if(colorTween != null) {

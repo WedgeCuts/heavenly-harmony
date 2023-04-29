@@ -174,7 +174,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var bgFade:FlxSprite = null;
 	var box:FlxSprite;
 	var textToType:String = '';
-	var background:FlxSprite;
+	var background:FlxSprite;					  
 
 	var arrayCharacters:Array<DialogueCharacter> = [];
 
@@ -200,7 +200,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade.visible = true;
 		bgFade.alpha = 0;
 		add(bgFade);
-		
 		background = new FlxSprite(0,0);
 		background.loadGraphic(Paths.image('dialogue/bgs/cutscene1')); //placeholder
 		background.setGraphicSize(1280,720);
@@ -208,7 +207,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		background.screenCenter();
 		background.antialiasing = true;
 		add(background);
-		background.alpha = 0;
+		background.alpha = 0;						  		   
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
@@ -294,6 +293,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 	public static var DEFAULT_TEXT_X = 250;
 	public static var DEFAULT_TEXT_Y = 380;
+	public static var LONG_TEXT_ADD = 24;
 	var scrollSpeed = 4000;
 	var daText:TypedAlphabet = null;
 	var ignoreThisFrame:Bool = true; //First frame is reserved for loading dialogue images
@@ -463,7 +463,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		do {
 			curDialogue = dialogueList.dialogue[currentText];
 		} while(curDialogue == null);
-		
 		//im too lazy but this does the background lol
 		//
 		if(curDialogue.sound != "none"){
@@ -517,9 +516,11 @@ class DialogueBoxPsych extends FlxSpriteGroup
 
 		daText.text = curDialogue.text;
 		//daText.sound = curDialogue.sound;
-		//if(daText.sound == null) 
+		//if(daText.sound == null || daText.sound.trim() == '') daText.sound = 'dialogue';
 		//resets da sound to the default sfx cuz its stoopid
 		daText.sound = 'dialogue';
+		daText.y = DEFAULT_TEXT_Y;
+		if(daText.rows > 2) daText.y -= LONG_TEXT_ADD;
 
 		var char:DialogueCharacter = arrayCharacters[character];
 		if(char != null) {
@@ -560,7 +561,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 		
 		if(!box.flipX) box.offset.y += 10;*/
-		
 		if(box.animation.curAnim.name.startsWith('center') || box.animation.curAnim.name.startsWith('center-angry')) {
 			box.alpha = 0;
 		}
