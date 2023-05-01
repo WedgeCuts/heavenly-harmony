@@ -1,6 +1,7 @@
 package;
 
 import flixel.FlxG;
+import flixel.system.FlxSound;
 import flixel.FlxSprite;
 import flixel.addons.text.FlxTypeText;
 import flixel.graphics.frames.FlxAtlasFrames;
@@ -184,6 +185,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	var textBoxTypes:Array<String> = ['normal', 'angry'];
 	
 	var curCharacter:String = "";
+	var curSound:FlxSound;
 	//var charPositionList:Array<String> = ['left', 'center', 'right'];
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
@@ -463,7 +465,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		} while(curDialogue == null);
 		//im too lazy but this does the background lol
 		//
-		if(curDialogue.sound != "none"){
+		if(curDialogue.speed == 0.01){ //just so it sets the bg
 			remove(background);
 			background.loadGraphic(Paths.image('dialogue/bgs/' + curDialogue.sound));
 			background.setGraphicSize(1280,720);
@@ -475,6 +477,16 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 		else{
 			background.alpha = 0;
+		}
+		
+		if (curDialogue.sound != null && curDialogue.speed == 0.05){
+			if (curSound != null && curSound.playing) //the voices in my head
+				{
+					curSound.stop();
+				}
+				curSound = new FlxSound().loadEmbedded(Paths.sound('voicelines/' + curDialogue.sound));
+				curSound.volume = 1;
+				curSound.play();
 		}
 
 		if(curDialogue.text == null || curDialogue.text.length < 1) curDialogue.text = ' ';

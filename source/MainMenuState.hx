@@ -136,7 +136,7 @@ class MainMenuState extends MusicBeatState
 		versionShit.scrollFactor.set();
 		versionShit.setFormat(Paths.font("GhostKidAOE.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Heavenly Harmony v.1.0-dev", 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Heavenly Harmony v.1.0-devbuild", 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat(Paths.font("GhostKidAOE.otf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -205,9 +205,9 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				if (optionShit[curSelected] == 'donate')
+				if (optionShit[curSelected] == 'extras')
 				{
-					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
+					CoolUtil.browserLoad('https://drive.google.com/drive/folders/1RXs1yn3awyYsaZKiSItjNCDB6Y19XoNt?usp=share_link');
 				}
 				else
 				{
@@ -239,8 +239,6 @@ class MainMenuState extends MusicBeatState
 									case 'story':
 										MusicBeatState.switchState(new StoryMenuState());
 									case 'freeplay':
-										MusicBeatState.switchState(new FreeplayState());
-									case 'extras':
 										MusicBeatState.switchState(new FreeplayState());
 									case 'credits':
 										MusicBeatState.switchState(new FunnyCreditsState());

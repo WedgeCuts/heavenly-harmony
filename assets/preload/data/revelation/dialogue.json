@@ -1,7 +1,7 @@
 {
 	"dialogue": [
 		{
-			"sound": "none",
+			"sound": "GF_2",
 			"speed": 0.05,
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
@@ -9,7 +9,7 @@
 			"text": "Wow, you did amazing back there! You up for one more?"
 		},
 		{
-			"sound": "none",
+			"sound": "3_1",
 			"speed": 0.05,
 			"portrait": "althea",
 			"boxState": "normal",
@@ -17,7 +17,7 @@
 			"text": "Yeah! Let’s—… oh no-"
 		},
 		{
-			"sound": "none",
+			"sound": "3_2",
 			"speed": 0.05,
 			"portrait": "althea",
 			"boxState": "normal",
@@ -26,14 +26,14 @@
 		},
 		{
 			"sound": "cutscene3",
-			"speed": 0.05,
+			"speed": 0.01,
 			"portrait": "cutscene",
 			"boxState": "normal",
 			"expression": "talk",
 			"text": ""
 		},
 		{
-			"sound": "none",
+			"sound": "3_3",
 			"speed": 0.05,
 			"portrait": "althea",
 			"boxState": "normal",
@@ -41,7 +41,7 @@
 			"text": "....…I gotta leave. Right now."
 		},
 		{
-			"sound": "none",
+			"sound": "GF_2",
 			"speed": 0.05,
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
@@ -49,7 +49,7 @@
 			"text": "Huh? Wait, hang on, what’s the matter?"
 		},
 		{
-			"sound": "none",
+			"sound": "3_4",
 			"speed": 0.05,
 			"portrait": "althea",
 			"boxState": "normal",
@@ -58,7 +58,7 @@
 		},
 		{
 			"sound": "cutscene4",
-			"speed": 0.05,
+			"speed": 0.01,
 			"portrait": "cutscene",
 			"boxState": "normal",
 			"expression": "talk",
@@ -66,7 +66,7 @@
 		},
 		{
 			"sound": "cutscene5",
-			"speed": 0.05,
+			"speed": 0.01,
 			"portrait": "cutscene",
 			"boxState": "normal",
 			"expression": "talk",
@@ -74,14 +74,14 @@
 		},
 		{
 			"sound": "cutscene6",
-			"speed": 0.05,
+			"speed": 0.01,
 			"portrait": "cutscene",
 			"boxState": "normal",
 			"expression": "talk",
 			"text": ""
 		},
 		{
-			"sound": "none",
+			"sound": "GF_1",
 			"speed": 0.05,
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
@@ -89,7 +89,7 @@
 			"text": "There, now we’re both in for it. Let’s just do one more song, then we can bolt."
 		},
 		{
-			"sound": "none",
+			"sound": "3_5",
 			"speed": 0.05,
 			"portrait": "althea",
 			"boxState": "normal",
@@ -97,7 +97,7 @@
 			"text": " I dunno… What if you get into trouble too?"
 		},
 		{
-			"sound": "none",
+			"sound": "GF_1",
 			"speed": 0.05,
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
@@ -105,7 +105,7 @@
 			"text": "No one will get in trouble. We’re not doing any harm, so I’m sure we’ll be okay."
 		},
 		{
-			"sound": "none",
+			"sound": "3_6",
 			"speed": 0.05,
 			"portrait": "althea",
 			"boxState": "normal",
@@ -113,7 +113,7 @@
 			"text": "...Thank you Girlfriend, I’ll take your word."
 		},
 		{
-			"sound": "none",
+			"sound": "GF_4",
 			"speed": 0.05,
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
@@ -121,7 +121,7 @@
 			"text": "Right! Besides, we can go grab some Jubilee after this."
 		},
 		{
-			"sound": "none",
+			"sound": "3_7",
 			"speed": 0.05,
 			"portrait": "althea",
 			"boxState": "normal",
