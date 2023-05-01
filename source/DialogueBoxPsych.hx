@@ -190,10 +190,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	{
 		super();
 
-		if(song != null && song != '') {
-			FlxG.sound.playMusic(Paths.music(song), 0);
-			FlxG.sound.music.fadeIn(2, 0, 1);
-		}
+		FlxG.sound.playMusic(Paths.music('HHcutscene1'), 0);
+		FlxG.sound.music.fadeIn(2, 0, 1);
 		
 		bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
 		bgFade.scrollFactor.set();
@@ -231,8 +229,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		add(box);
 
 		daText = new TypedAlphabet(DEFAULT_TEXT_X, DEFAULT_TEXT_Y, '');
-		daText.scaleX = 0.7;
-		daText.scaleY = 0.7;
+		daText.scaleX = 0.55;
+		daText.scaleY = 0.55;
 		add(daText);
 
 		startNextDialog();
@@ -291,7 +289,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 	}
 
-	public static var DEFAULT_TEXT_X = 250;
+	public static var DEFAULT_TEXT_X = 230;
 	public static var DEFAULT_TEXT_Y = 380;
 	public static var LONG_TEXT_ADD = 24;
 	var scrollSpeed = 4000;

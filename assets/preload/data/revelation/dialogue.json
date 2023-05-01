@@ -1,0 +1,132 @@
+{
+	"dialogue": [
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "Wow, you did amazing back there! You up for one more?"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-talk",
+			"text": "Yeah! Let’s—… oh no-"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-what",
+			"text": "Was there… always a crowd around us? (Why do they all look like they saw a ghost..?)"
+		},
+		{
+			"sound": "cutscene3",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-huh",
+			"text": "....…I gotta leave. Right now."
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "huh",
+			"text": "Huh? Wait, hang on, what’s the matter?"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-cry",
+			"text": " I’m not supposed to be seen like this, I’ll be ridiculed! I’m sorry, it-it was fun, but—"
+		},
+		{
+			"sound": "cutscene4",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "cutscene5",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "cutscene6",
+			"speed": 0.05,
+			"portrait": "cutscene",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ""
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "demon-talk",
+			"text": "There, now we’re both in for it. Let’s just do one more song, then we can bolt."
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-hmm",
+			"text": " I dunno… What if you get into trouble too?"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "demon-happy",
+			"text": "No one will get in trouble. We’re not doing any harm, so I’m sure we’ll be okay."
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-talk",
+			"text": "...Thank you Girlfriend, I’ll take your word."
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "demon-hype",
+			"text": "Right! Besides, we can go grab some Jubilee after this."
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "angel-talk",
+			"text": "I think you mean Jollibee, but… that–that sounds like a plan."
+		}
+	]
+}

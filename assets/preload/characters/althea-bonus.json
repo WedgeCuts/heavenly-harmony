@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				7,
-				5
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-32,
+				6
+			],
 			"anim": "singUP",
-			"indices": [],
-			"name": "AltheaUpNote"
+			"fps": 24,
+			"name": "AltheaUpNote",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				10,
 				-17
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "AltheaRightNote"
+			"fps": 24,
+			"name": "AltheaRightNote",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "AltheaIdle"
+			"fps": 24,
+			"name": "AltheaIdle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				26,
+				-10,
 				1
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "AltheaLeftNote"
+			"fps": 24,
+			"name": "AltheaLeftNote",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-9,
-				-22
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				12,
+				-19
+			],
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "AltheaDownNote"
+			"fps": 24,
+			"name": "AltheaDownNote",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -62,12 +62,12 @@
 		10,
 		180
 	],
-	"healthicon": "kou",
-	"flip_x": false,
+	"healthicon": "althea",
+	"flip_x": true,
 	"healthbar_colors": [
-		216,
-		85,
-		142
+		107,
+		92,
+		182
 	],
 	"camera_position": [
 		-10,

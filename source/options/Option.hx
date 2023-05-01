@@ -74,6 +74,8 @@ class Option
 					if(options.length > 0) {
 						defaultValue = options[0];
 					}
+				case 'option':
+					defaultValue = 0;
 			}
 		}
 

@@ -201,10 +201,11 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 					smallIcon.x = 591;
 					smallIcon.y = 510;
 				default:
-					smallIcon.x = -400;
-					smallIcon.y = -400;
+					smallIcon.x = 0;
+					smallIcon.y = 0;
 			}
 			
+			if (i <= 18){
 			add(smallIcon);
 			smallIcon.ID = i;
 			
@@ -220,6 +221,7 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 			add(bigIcon);
 			bigIcon.ID = i;
 			bigIcons.add(bigIcon);
+			}
 		}
 		
 		stars = new FlxSprite().loadGraphic(Paths.image('menus/credits/credits_stars'));
@@ -280,7 +282,7 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 		roleText.text = creditsStuff[sel][2];
 		quoteText.text = creditsStuff[sel][3];
 		
-		bigIcons.forEach(function(spr:FlxSprite) //pls work
+		bigIcons.forEach(function(spr:FlxSprite) //portrait
 		{
 			if (spr.ID == sel)
 			{

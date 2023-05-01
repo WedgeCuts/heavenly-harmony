@@ -1,103 +1,103 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				62,
+				32,
 				63
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "GF_RIGHT_NOTE",
-			"indices": []
+			"indices": [],
+			"name": "GF_RIGHT_NOTE"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				19,
+				26,
 				60
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "GF_LEFT_NOTE",
-			"indices": []
+			"indices": [],
+			"name": "GF_LEFT_NOTE"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				25,
+				55,
 				59
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_DOWN_NOTE",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "GF_DOWN_NOTE"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				34,
+				21,
 				57
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_UP_NOTE",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "GF_UP_NOTE"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				20,
+				27,
 				60
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_MISS_LEFT",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "GF_MISS_LEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				25,
+				54,
 				59
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_MISS_DOWN",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "GF_MISS_DOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				34,
+				21,
 				57
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_MISS_UP",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "GF_MISS_UP"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				62,
+				32,
 				62
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "GF_MISS_RIGHT",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "GF_MISS_RIGHT"
 		},
 		{
+			"loop": true,
 			"offsets": [
 				30,
 				62
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "GF_Idle"
+			"fps": 24,
+			"name": "GF_Idle",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -106,8 +106,8 @@
 		30,
 		250
 	],
-	"healthicon": "gf",
-	"flip_x": true,
+	"healthicon": "pinoygf",
+	"flip_x": false,
 	"healthbar_colors": [
 		49,
 		176,

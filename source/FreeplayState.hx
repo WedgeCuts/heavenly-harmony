@@ -13,6 +13,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
+import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import lime.utils.Assets;
 import flixel.system.FlxSound;
@@ -53,6 +54,8 @@ class FreeplayState extends MusicBeatState
 	
 	var backk:FlxSprite;
 	var tv:FlxSprite;
+	
+	var funkay:FlxSprite;
 	
 	var fplayItems:FlxTypedGroup<FlxSprite>;	
 	var optionShit:Array<String> = [
@@ -240,6 +243,16 @@ class FreeplayState extends MusicBeatState
 		text.setFormat(Paths.font("vcr.ttf"), size, FlxColor.WHITE, RIGHT);
 		text.scrollFactor.set();
 		add(text);
+		
+		var randumb = Std.string(FlxG.random.int(1, 2)); //CHANGE THESE WHEN WE ADD MORE
+		
+		funkay = new FlxSprite(0, 0).loadGraphic(Paths.image('menus/load/' + randumb));
+		funkay.updateHitbox();
+		funkay.antialiasing = ClientPrefs.globalAntialiasing;
+		funkay.scrollFactor.set();
+		funkay.screenCenter();
+		funkay.alpha = 0;
+		
 		super.create();
 	}
 
@@ -413,6 +426,15 @@ class FreeplayState extends MusicBeatState
 				trace('Couldnt find file');
 			}*/
 			trace(poop);
+			
+			//loading screen!
+			add(funkay);
+					
+			FlxTween.tween(funkay, {alpha: 1.0}, 1.0, {
+			ease: FlxEase.backIn,
+			onComplete: function(tween:FlxTween){
+			
+			FlxTransitionableState.skipNextTransIn = true;
 
 			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
 			PlayState.isStoryMode = false;
@@ -432,6 +454,9 @@ class FreeplayState extends MusicBeatState
 			FlxG.sound.music.volume = 0;
 					
 			destroyFreeplayVocals();
+			
+			}
+			});
 		}
 		else if(controls.RESET)
 		{

@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "An_ALTHEA IDLE"
+		},
+		{
+			"offsets": [
+				12,
+				-8
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "An_ALTHEA LEFT"
+		},
+		{
+			"offsets": [
+				130,
+				90
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "An_ALTHEA DOWN"
+		},
+		{
+			"offsets": [
+				79,
+				16
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "An_ALTHEA UP"
+		},
+		{
+			"offsets": [
+				246,
+				-10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "An_ALTHEA RIGHT"
+		},
+		{
+			"offsets": [
+				0,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hey",
+			"loop": false,
+			"name": "An_ALTHEA HEY"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ANGELALETHEA",
+	"position": [
+		0,
+		60
+	],
+	"healthicon": "althea",
+	"flip_x": false,
+	"healthbar_colors": [
+		107,
+		92,
+		182
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

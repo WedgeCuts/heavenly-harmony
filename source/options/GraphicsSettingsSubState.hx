@@ -35,6 +35,17 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 	{
 		title = 'Preferences';
 		rpcTitle = 'Preferences'; //for Discord Rich Presence
+		
+		var option:Option = new Option('Adjust Delay and Combo', //Name
+			'Open The Notes Offset Menu', //Description
+			'dummy', //Save data variable name
+			'option', //Variable type
+			0); //Default value
+		addOption(option);
+		option.minValue = 0;
+		option.maxValue = 1;
+		option.displayFormat = '-';
+		option.onChange = onClick;
 
 		//I'd suggest using "Low Quality" as an example for making your own option since it is the simplest here
 		var option:Option = new Option('Low Quality', //Name
@@ -302,6 +313,11 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			FlxG.drawFramerate = ClientPrefs.framerate;
 			FlxG.updateFramerate = ClientPrefs.framerate;
 		}
+	}
+	
+	function onClick()
+	{
+		LoadingState.loadAndSwitchState(new options.NoteOffsetState());
 	}
 	
 	function onChangeHitsoundVolume()

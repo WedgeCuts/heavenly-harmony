@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Dv_GF IDLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				-6
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Dv_GF LEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				109,
+				125
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Dv_GF DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				146,
+				2
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Dv_GF UP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				170,
+				-16
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Dv_GF RIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				29
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Dv_GF MISS LEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				189,
+				91
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Dv_GF MISS DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				151,
+				28
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Dv_GF MISS UP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				151,
+				2
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Dv_GF MISS RIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				4
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "Dv_GF HEY",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/GFDEMON",
+	"position": [
+		0,
+		60
+	],
+	"healthicon": "pinoygf",
+	"flip_x": true,
+	"healthbar_colors": [
+		166,
+		0,
+		76
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

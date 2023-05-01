@@ -1,0 +1,36 @@
+{
+	"dialogue": [
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Th-—That wasn’t too bad, actually."
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "See? Told ya’ it would be fun!"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "althea",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yeah, it-it was! We could do another one, it doesn't look like there’s anybody else wanting to do karaoke…"
+		},
+		{
+			"sound": "none",
+			"speed": 0.05,
+			"portrait": "gf-pinoy",
+			"boxState": "angry",
+			"expression": "hype",
+			"text": "Hell yeah!"
+		}
+	]
+}
