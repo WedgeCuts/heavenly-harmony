@@ -14,7 +14,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "angel-talk",
-			"text": "Yeah! Let’s—… oh no-"
+			"text": "Yeah! Let's—… oh no-"
 		},
 		{
 			"sound": "3_2",
@@ -46,7 +46,7 @@
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "huh",
-			"text": "Huh? Wait, hang on, what’s the matter?"
+			"text": "Huh? Wait, hang on, what's the matter?"
 		},
 		{
 			"sound": "3_4",
@@ -54,7 +54,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "angel-cry",
-			"text": " I’m not supposed to be seen like this, I’ll be ridiculed! I’m sorry, it-it was fun, but—"
+			"text": " I'm not supposed to be seen like this, I'll be ridiculed! I'm sorry, it-it was fun, but—"
 		},
 		{
 			"sound": "cutscene4",
@@ -73,20 +73,12 @@
 			"text": ""
 		},
 		{
-			"sound": "cutscene6",
-			"speed": 0.01,
-			"portrait": "cutscene",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": ""
-		},
-		{
 			"sound": "GF_1",
 			"speed": 0.05,
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "demon-talk",
-			"text": "There, now we’re both in for it. Let’s just do one more song, then we can bolt."
+			"text": "There, now we're both in for it. Let's just do one more song, then we can bolt."
 		},
 		{
 			"sound": "3_5",
@@ -102,7 +94,7 @@
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "demon-happy",
-			"text": "No one will get in trouble. We’re not doing any harm, so I’m sure we’ll be okay."
+			"text": "No one will get in trouble. We're not doing any harm, so I'm sure we'll be okay."
 		},
 		{
 			"sound": "3_6",
@@ -110,7 +102,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "angel-talk",
-			"text": "...Thank you Girlfriend, I’ll take your word."
+			"text": "...Thank you Girlfriend, I'll take your word."
 		},
 		{
 			"sound": "GF_4",
@@ -126,7 +118,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "angel-talk",
-			"text": "I think you mean Jollibee, but… that–that sounds like a plan."
+			"text": "I think you mean Jollibee, but… th-that sounds like a plan."
 		}
 	]
 }

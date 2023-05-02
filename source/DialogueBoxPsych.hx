@@ -192,7 +192,14 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	{
 		super();
 
-		FlxG.sound.playMusic(Paths.music('HHcutscene1'), 0);
+		//Switch the music loop
+		switch(PlayState.SONG.song)
+		{
+			case 'Revelation':
+				FlxG.sound.playMusic(Paths.music('HHcutscene2'), 0);
+			default:
+				FlxG.sound.playMusic(Paths.music('HHcutscene1'), 0);
+		}
 		FlxG.sound.music.fadeIn(2, 0, 1);
 		
 		bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
@@ -291,8 +298,8 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 	}
 
-	public static var DEFAULT_TEXT_X = 230;
-	public static var DEFAULT_TEXT_Y = 380;
+	public static var DEFAULT_TEXT_X = 200;
+	public static var DEFAULT_TEXT_Y = 390;
 	public static var LONG_TEXT_ADD = 24;
 	var scrollSpeed = 4000;
 	var daText:TypedAlphabet = null;
@@ -412,6 +419,9 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				box.destroy();
 				box = null;
 			}
+			
+			curSound.volume = 0;
+			curSound.stop();
 
 			if(bgFade != null) {
 				bgFade.alpha -= 0.5 * elapsed;
@@ -478,16 +488,6 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		else{
 			background.alpha = 0;
 		}
-		
-		if (curDialogue.sound != null && curDialogue.speed == 0.05){
-			if (curSound != null && curSound.playing) //the voices in my head
-				{
-					curSound.stop();
-				}
-				curSound = new FlxSound().loadEmbedded(Paths.sound('voicelines/' + curDialogue.sound));
-				curSound.volume = 1;
-				curSound.play();
-		}
 
 		if(curDialogue.text == null || curDialogue.text.length < 1) curDialogue.text = ' ';
 		if(curDialogue.boxState == null) curDialogue.boxState = 'normal';
@@ -543,6 +543,21 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			}
 		}
 		currentText++;
+		
+		if (curDialogue.sound != null && curDialogue.speed == 0.05){
+			if (curSound != null && curSound.playing) //the voices in my head
+				{
+					curSound.volume = 0;
+					curSound.stop();
+				}
+				curSound = new FlxSound().loadEmbedded(Paths.sound('voicelines/' + curDialogue.sound));
+				curSound.volume = 1;
+				curSound.play();
+		}
+		if (curDialogue.sound != null && curDialogue.speed == 0.01 && curSound.playing){ //just making sure
+					curSound.volume = 0;
+					curSound.stop();
+		}
 
 		if(nextDialogueThing != null) {
 			nextDialogueThing();

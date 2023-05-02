@@ -14,7 +14,7 @@
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "*Looking around* Hmm though I don’t really know what to check out next… —wait, is that who I think it is?"
+			"text": "*Looking around* Hmm though I don't really know what to check out next… —wait, is that who I think it is?"
 		},
 		{
 			"sound": "GF_3",
@@ -46,7 +46,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "hmm",
-			"text": "Hey, I’ve missed you so much… You’ve changed a lot since we were in high school. (I swear you had horns back then…)"
+			"text": "Hey, I've missed you so much… You've changed a lot since we were in high school. (I swear you had horns back then…)"
 		},
 		{
 			"sound": "GF_2",
@@ -54,7 +54,7 @@
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "Well, it’s a long story. Anyway, since we’re both here, you wanna do something together?"
+			"text": "Well, it's a long story. Anyway, since we're both here, you wanna do something together?"
 		},
 		{
 			"sound": "1_3",
@@ -62,7 +62,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "hmm",
-			"text": "Oh, sure! We could do some shopping, or get something to eat from the stands nearby. There’s also a concert later tonigh—"
+			"text": "Oh, sure! We could do some shopping, or get something to eat from the stands nearby. There's also a concert later tonight..."
 		},
 		{
 			"sound": "GF_4",
@@ -94,7 +94,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "huh",
-			"text": "Hey, maybe we could… do something else? (Something that doesn’t require me to sing…)"
+			"text": "Hey, maybe we could… do something else? (Something that doesn't require me to sing…)"
 		},
 		{
 			"sound": "GF_3",
@@ -102,7 +102,7 @@
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "But why? You’re such a great singer!"
+			"text": "But why? You're such a great singer!"
 		},
 		{
 			"sound": "1_6",
@@ -110,7 +110,7 @@
 			"portrait": "althea",
 			"boxState": "normal",
 			"expression": "huh",
-			"text": "I-I’m not saying I’m not a good singer, it’s just… There’s a lot of people around… y’know"
+			"text": "I-I'm not saying I'm not a good singer, it's just… there's a lot of people around… y'know"
 		},
 		{
 			"sound": "GF_4",
@@ -118,7 +118,7 @@
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "hype",
-			"text": "Well, if they wanna judge they can kiss our ass. We’re just trying to have fun!"
+			"text": "Well, if they wanna judge they can kiss our ass. We're just trying to have fun!"
 		},
 		{
 			"sound": "",
@@ -134,7 +134,7 @@
 			"portrait": "gf-pinoy",
 			"boxState": "angry",
 			"expression": "talk",
-			"text": "Okay, how about we off easy. We’ll just do a simple song to get warmed up!"
+			"text": "Okay, how about we off easy. We'll just do a simple song to get warmed up!"
 		},
 		{
 			"sound": "1_7",

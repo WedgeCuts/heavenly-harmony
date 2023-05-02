@@ -22,11 +22,11 @@ function onCreate()
 	makeLuaSprite('bopfg', 'bg/fgboppers', -600, -200)
 	
 	addLuaSprite('bg', false)
+	
+	addLuaSprite('stall2', false)
 	addLuaSprite('stall11', false)
 	addLuaSprite('bopbg2', false)
 	addLuaSprite('stall12', false)
-	
-	addLuaSprite('stall2', false)
 	addLuaSprite('bopbg1', false)
 	addLuaSprite('bopbg3', false)
 	
