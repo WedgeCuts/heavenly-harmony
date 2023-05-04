@@ -3,8 +3,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-32,
-				6
+				11,
+				3
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -36,7 +36,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				-10,
+				25,
 				1
 			],
 			"anim": "singLEFT",
@@ -47,8 +47,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				12,
-				-19
+				-8,
+				-21
 			],
 			"anim": "singDOWN",
 			"fps": 24,
@@ -63,7 +63,7 @@
 		180
 	],
 	"healthicon": "althea",
-	"flip_x": true,
+	"flip_x": false,
 	"healthbar_colors": [
 		107,
 		92,

@@ -109,6 +109,17 @@
 			"fps": 24,
 			"name": "Dv_GF HEY",
 			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				4
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "Dv_GF HEY",
+			"indices": [14, 14]
 		}
 	],
 	"no_antialiasing": false,

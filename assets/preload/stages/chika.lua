@@ -1,10 +1,10 @@
 local speed = 60
 local i =0
-local xx = 908.78
+local xx = 1008.78
 local yy = 760
-local xx2 = 1357.77
+local xx2 = 1157.77
 local yy2 = 760
-local ofs = 0
+local ofs = 20
 local followchars = true
 local hankdown = false
 
@@ -12,7 +12,7 @@ function onCreate()
 	-- background shit
 	
 	-- Scrolling Objects
-	makeLuaSprite('mts', 'bg/bonusBG1', -3283, 300)
+	makeLuaSprite('mts', 'bg/bonusBG1', 3283, 300)
 	scaleObject('mts', 0.6, 0.6)
 	makeLuaSprite('mts2', 'bg/bonusBG2', 0, 300)
 	scaleObject('mts2', 0.6, 0.6)
@@ -30,21 +30,24 @@ function onCreate()
 	addLuaSprite('bartop', false)
 	addLuaSprite('barbot', false)
 	
+	setPropertyFromClass('GameOverSubstate', 'characterName', 'gf_fuckin_dies')
+	setPropertyFromClass('GameOverSubstate', 'deathSoundName', 'ayothepizzashere')
+	
 end
 
 function onUpdate(elapsed)
 i = i + 1
 
 	DALAPSED = elapsed/0.016 --Thanks Holiday Mod Part II
-	speed = 5*DALAPSED
+	speed = 2*DALAPSED
 	
-	setProperty('mts.x',getProperty('mts.x')+speed)
-	if getProperty('mts.x') > 3283 then
-		setProperty('mts.x',-3283)
+	setProperty('mts.x',getProperty('mts.x')-speed)
+	if getProperty('mts.x') < -3280 then
+		setProperty('mts.x',3280)
 	end
-	setProperty('mts2.x',getProperty('mts2.x')+speed)
-	if getProperty('mts2.x') > 3283 then
-		setProperty('mts2.x',-3283)
+	setProperty('mts2.x',getProperty('mts2.x')-speed)
+	if getProperty('mts2.x') < -3280 then
+		setProperty('mts2.x',3280)
 	end
 	
 	

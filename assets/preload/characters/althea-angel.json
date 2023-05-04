@@ -65,6 +65,17 @@
 			"anim": "hey",
 			"loop": false,
 			"name": "An_ALTHEA HEY"
+		},
+		{
+			"offsets": [
+				0,
+				10
+			],
+			"indices": [14, 14],
+			"fps": 24,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "An_ALTHEA HEY"
 		}
 	],
 	"no_antialiasing": false,

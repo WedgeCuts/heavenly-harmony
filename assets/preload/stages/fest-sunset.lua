@@ -1,7 +1,7 @@
 local xx = 465.00
-local yy = 500
+local yy = 450
 local xx2 = 900
-local yy2 = 500
+local yy2 = 450
 local ofs = 50
 local followchars = true
 
@@ -24,13 +24,6 @@ function onCreate()
 	addLuaSprite('stage', false)
 	addLuaSprite('bopfg', true)
 	addLuaSprite('banderitas', true)
-	
-	initLuaShader('agabeebopAssShaderSoft')
-	setSpriteShader('boyfriend', 'agabeebopAssShaderSoft')
-	setSpriteShader('dad', 'agabeebopAssShaderSoft')
-	initLuaShader('dropShadow')
-	setSpriteShader('boyfriend', 'dropShadow')
-	setSpriteShader('dad', 'dropShadow')
 	
 	setPropertyFromClass('GameOverSubstate', 'characterName', 'gfpinoy-gameover')
 	

@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "GF DEATH0"
+		},
+		{
+			"offsets": [
+				-52,
+				-63
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "GF DEATH LOOP0"
+		},
+		{
+			"offsets": [
+				163,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "GF DEATH CONFIRM0"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/gf_fucking_DIES",
+	"position": [
+		-250,
+		180
+	],
+	"healthicon": "face",
+	"flip_x": true,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		-120,
+		-10
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

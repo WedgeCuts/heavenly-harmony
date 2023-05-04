@@ -227,20 +227,20 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 		stars = new FlxSprite().loadGraphic(Paths.image('menus/credits/credits_stars'));
 		add(stars);
 		
-		nameText = new FlxText(860, 400, 1180, "", 32);
-		nameText.setFormat(Paths.font("GhostKidAOE.otf"), 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		nameText = new FlxText(860, 400, 1180, "", 35);
+		nameText.setFormat(Paths.font("Marker Felt.ttf"), 35, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		nameText.scrollFactor.set();
 		nameText.borderSize = 1.2;
 		add(nameText);
 		
-		roleText = new FlxText(860, 430, 400, "", 32);
-		roleText.setFormat(Paths.font("GhostKidAOE.otf"), 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		roleText = new FlxText(860, 460, 400, "", 35);
+		roleText.setFormat(Paths.font("Marker Felt.ttf"), 35, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		roleText.scrollFactor.set();
 		roleText.borderSize = 1.2;
 		add(roleText);
 
 		quoteText = new FlxText(860, 520, 400, "", 30);
-		quoteText.setFormat(Paths.font("GhostKidAOE.otf"), 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		quoteText.setFormat(Paths.font("Marker Felt.ttf"), 30, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		quoteText.scrollFactor.set();
 		quoteText.borderSize = 1.2;
 		add(quoteText);

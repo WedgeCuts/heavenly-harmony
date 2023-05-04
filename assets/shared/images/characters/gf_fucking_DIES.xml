@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.0.2 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="gf fucking DIES.png" width="4423" height="4679">
+	<SubTexture name="GF DEATH CONFIRM0003" x="3" y="3" width="955" height="441" frameX="-0" frameY="-0" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH0052" x="3" y="450" width="821" height="503" frameX="-0" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH CONFIRM0005" x="3" y="959" width="948" height="435" frameX="-7" frameY="-6" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH0009" x="957" y="450" width="543" height="753" frameX="-440" frameY="-67" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH CONFIRM0007" x="3" y="1400" width="945" height="432" frameX="-10" frameY="-9" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH0051" x="957" y="1209" width="817" height="495" frameX="-4" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH CONFIRM0009" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH0050" x="954" y="1710" width="794" height="463" frameX="-27" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH CONFIRM0001" x="3" y="1838" width="874" height="396" frameX="-81" frameY="-45" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH0064" x="1506" y="437" width="800" height="396" frameX="-21" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0065" x="1780" y="839" width="396" height="799" rotated="true" frameX="-22" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0066" x="1754" y="1710" width="396" height="797" rotated="true" frameX="-24" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0067" x="883" y="2179" width="796" height="396" frameX="-25" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0068" x="3" y="2240" width="794" height="396" frameX="-27" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0069" x="1910" y="3" width="793" height="396" frameX="-28" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0070" x="2156" y="1644" width="396" height="791" rotated="true" frameX="-30" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0071" x="2182" y="839" width="396" height="790" rotated="true" frameX="-31" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0072" x="1685" y="2513" width="788" height="396" frameX="-33" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0073" x="803" y="2581" width="787" height="396" frameX="-34" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0074" x="3" y="2642" width="785" height="396" frameX="-36" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0075" x="2312" y="405" width="784" height="396" frameX="-37" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0076" x="2558" y="1635" width="396" height="782" rotated="true" frameX="-39" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0077" x="2584" y="807" width="396" height="781" rotated="true" frameX="-40" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0078" x="2558" y="2423" width="396" height="779" rotated="true" frameX="-42" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0079" x="1596" y="2915" width="778" height="396" frameX="-43" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH LOOP0001" x="794" y="2983" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0002" x="3" y="3044" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0003" x="2709" y="3" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0004" x="2960" y="1594" width="396" height="776" rotated="true" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0005" x="2986" y="807" width="396" height="776" rotated="true" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0006" x="2960" y="2376" width="396" height="776" rotated="true" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0007" x="2380" y="3208" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0008" x="1576" y="3317" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0009" x="785" y="3385" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0010" x="3" y="3446" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH0080" x="3102" y="405" width="776" height="396" frameX="-45" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0081" x="3162" y="3158" width="775" height="396" frameX="-46" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0082" x="3362" y="1589" width="396" height="773" rotated="true" frameX="-48" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0083" x="3388" y="807" width="396" height="772" rotated="true" frameX="-49" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0084" x="3362" y="2368" width="396" height="770" rotated="true" frameX="-51" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0085" x="3162" y="3560" width="769" height="396" frameX="-52" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0007" x="2358" y="3610" width="489" height="546" frameX="-415" frameY="-0" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0053" x="1567" y="3719" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0054" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0029" x="3" y="3848" width="536" height="438" frameX="-114" frameY="-52" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0033" x="3937" y="3560" width="432" height="521" rotated="true" frameX="-111" frameY="-52" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0025" x="3764" y="1585" width="529" height="405" frameX="-110" frameY="-52" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0023" x="3491" y="3" width="536" height="395" frameX="-114" frameY="-95" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0026" x="3790" y="807" width="536" height="395" frameX="-114" frameY="-95" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0032" x="3884" y="404" width="536" height="395" frameX="-114" frameY="-95" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0024" x="3764" y="1996" width="521" height="405" frameX="-111" frameY="-79" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0027" x="3764" y="2407" width="521" height="405" frameX="-111" frameY="-79" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0030" x="3943" y="2818" width="405" height="521" rotated="true" frameX="-111" frameY="-79" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0003" x="1440" y="4121" width="377" height="552" frameX="-330" frameY="-5" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0010" x="1823" y="4121" width="375" height="546" rotated="true" frameX="-445" frameY="-474" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0028" x="545" y="4189" width="529" height="384" frameX="-110" frameY="-73" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0031" x="3" y="4292" width="529" height="384" frameX="-110" frameY="-73" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0034" x="2853" y="3962" width="529" height="384" frameX="-110" frameY="-73" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0001" x="2204" y="4162" width="542" height="374" rotated="true" frameX="-319" frameY="-14" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0005" x="3388" y="3962" width="383" height="522" frameX="-333" frameY="-5" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH CONFIRM0002" x="3" y="1838" width="874" height="396" frameX="-81" frameY="-45" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0004" x="3" y="3" width="955" height="441" frameX="-0" frameY="-0" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0006" x="3" y="959" width="948" height="435" frameX="-7" frameY="-6" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0008" x="3" y="1400" width="945" height="432" frameX="-10" frameY="-9" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0010" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0011" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0012" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0013" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0014" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0015" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0016" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0017" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0018" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0019" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0020" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0021" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0022" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0023" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0024" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0025" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0026" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0027" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0028" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0029" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0030" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH CONFIRM0031" x="964" y="3" width="940" height="428" frameX="-15" frameY="-13" frameWidth="955" frameHeight="441"/>
+	<SubTexture name="GF DEATH LOOP0011" x="785" y="3385" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0013" x="785" y="3385" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0012" x="3" y="3446" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH LOOP0014" x="3" y="3446" width="776" height="396" frameX="-0" frameY="-0" frameWidth="776" frameHeight="396"/>
+	<SubTexture name="GF DEATH0002" x="2204" y="4162" width="542" height="374" rotated="true" frameX="-319" frameY="-14" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0004" x="1440" y="4121" width="377" height="552" frameX="-330" frameY="-5" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0006" x="3388" y="3962" width="383" height="522" frameX="-333" frameY="-5" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0008" x="2358" y="3610" width="489" height="546" frameX="-415" frameY="-0" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0011" x="1823" y="4121" width="375" height="546" rotated="true" frameX="-445" frameY="-474" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0035" x="3491" y="3" width="536" height="395" frameX="-114" frameY="-95" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0047" x="3491" y="3" width="536" height="395" frameX="-114" frameY="-95" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0036" x="3764" y="1996" width="521" height="405" frameX="-111" frameY="-79" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0048" x="3764" y="1996" width="521" height="405" frameX="-111" frameY="-79" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0037" x="3764" y="1585" width="529" height="405" frameX="-110" frameY="-52" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0049" x="3764" y="1585" width="529" height="405" frameX="-110" frameY="-52" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0038" x="3790" y="807" width="536" height="395" frameX="-114" frameY="-95" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0039" x="3764" y="2407" width="521" height="405" frameX="-111" frameY="-79" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0040" x="545" y="4189" width="529" height="384" frameX="-110" frameY="-73" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0041" x="3" y="3848" width="536" height="438" frameX="-114" frameY="-52" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0042" x="3943" y="2818" width="405" height="521" rotated="true" frameX="-111" frameY="-79" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0043" x="3" y="4292" width="529" height="384" frameX="-110" frameY="-73" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0044" x="3884" y="404" width="536" height="395" frameX="-114" frameY="-95" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0045" x="3937" y="3560" width="432" height="521" rotated="true" frameX="-111" frameY="-52" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0046" x="2853" y="3962" width="529" height="384" frameX="-110" frameY="-73" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0055" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0056" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0057" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0058" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0059" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0060" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0061" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0062" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+	<SubTexture name="GF DEATH0063" x="785" y="3787" width="649" height="396" frameX="-172" frameY="-54" frameWidth="991" frameHeight="849"/>
+</TextureAtlas>
