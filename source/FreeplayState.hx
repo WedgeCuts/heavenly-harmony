@@ -57,8 +57,15 @@ class FreeplayState extends MusicBeatState
 	
 	var funkay:FlxSprite;
 	
-	var fplayItems:FlxTypedGroup<FlxSprite>;	
+	var fplayItems:FlxTypedGroup<FlxSprite>;
+	var previews:FlxTypedGroup<FlxSprite>;		
 	var optionShit:Array<String> = [
+		'wistful',
+		'heavenbound',
+		'revelation',
+		'chikahan'
+	];
+	var optionShite:Array<String> = [
 		'wistful',
 		'heavenbound',
 		'revelation',
@@ -201,24 +208,40 @@ class FreeplayState extends MusicBeatState
 		add(backk);	
 		backk.screenCenter();
 		
-		//insert teevee thingymabob here
+		fplayItems = new FlxTypedGroup<FlxSprite>();
+		add(fplayItems);
+		previews = new FlxTypedGroup<FlxSprite>();
+		add(previews);
+		
+		for (i in 0...optionShit.length)
+		{
+			
+			var preview:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menus/fplay/prev-' + optionShit[i]));
+			preview.scale.set(0.5,0.5);
+			preview.x = 746;
+			preview.y = 117;
+			preview.updateHitbox();
+			
+			add(preview);
+			preview.ID = i;
+			previews.add(preview);
+		}
 		
 		tv = new FlxSprite().loadGraphic(Paths.image('menus/fplay/freeplay-tv'));
 		tv.antialiasing = ClientPrefs.globalAntialiasing;
 		add(tv);
 		tv.screenCenter();
 		
-		fplayItems = new FlxTypedGroup<FlxSprite>();
-		add(fplayItems);
-
-		for (i in 0...optionShit.length)
+		for (i in 0...optionShite.length)
 		{
-			var fplayItem:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('menus/fplay/fplay-' + optionShit[i]));
-			fplayItem.ID = i;
-			fplayItems.add(fplayItem);
+			var fplayItem:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('menus/fplay/fplay-' + optionShite[i]));		
 			fplayItem.scrollFactor.set(0, 0);
 			fplayItem.antialiasing = ClientPrefs.globalAntialiasing;
 			fplayItem.updateHitbox();
+			
+			add(fplayItem);
+			fplayItem.ID = i;
+			fplayItems.add(fplayItem);
 		}
 		
 		changeItem();
@@ -244,7 +267,7 @@ class FreeplayState extends MusicBeatState
 		text.scrollFactor.set();
 		add(text);
 		
-		var randumb = Std.string(FlxG.random.int(1, 2)); //CHANGE THESE WHEN WE ADD MORE
+		var randumb = Std.string(FlxG.random.int(1, 4)); //CHANGE THESE WHEN WE ADD MORE
 		
 		funkay = new FlxSprite(0, 0).loadGraphic(Paths.image('menus/load/' + randumb));
 		funkay.updateHitbox();
@@ -508,6 +531,18 @@ class FreeplayState extends MusicBeatState
 		fplayItems.forEach(function(spr:FlxSprite)
 		{
 
+			if (spr.ID == coorSelected)
+			{
+				spr.alpha = 1.0;
+			}
+			else
+			{
+				spr.alpha = 0;
+			}
+		});
+		
+		previews.forEach(function(spr:FlxSprite) //portrait
+		{
 			if (spr.ID == coorSelected)
 			{
 				spr.alpha = 1.0;

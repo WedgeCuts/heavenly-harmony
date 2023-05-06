@@ -82,6 +82,7 @@ class TitleState extends MusicBeatState
 	#end
 
 	var mustUpdate:Bool = false;
+	var renderStr:String = 'althea-render';
 
 	var titleJSON:TitleData;
 
@@ -289,7 +290,11 @@ class TitleState extends MusicBeatState
 		backdrop = new FlxBackdrop(Paths.image('menus/scrollbg'), 1.0, 1.0, true, true);
 		add(backdrop);
 		
-		render = new FlxSprite(-750, 0).loadGraphic(Paths.image('menus/althea-render'));
+		if (FlxG.save.data.beatenMainWeek != null){
+			renderStr = 'final-render'; //changes the render when u beat the main week
+		}
+		
+		render = new FlxSprite(-1000, 0).loadGraphic(Paths.image('menus/' + renderStr));
 		render.scrollFactor.set(1, 0);
 		render.antialiasing = ClientPrefs.globalAntialiasing;
 		add(render);
@@ -304,6 +309,13 @@ class TitleState extends MusicBeatState
 		logoBl.x = 600;
 		logoBl.updateHitbox();
 		// logoBl.color = FlxColor.BLACK;
+		
+		var starto:FlxSprite = new FlxSprite(0, 559).loadGraphic(Paths.image('menus/enter'));
+		starto.scale.set(0.35,0.35);
+		starto.updateHitbox();
+		starto.screenCenter(X);
+		starto.antialiasing = ClientPrefs.globalAntialiasing;
+		add(starto);
 
 		swagShader = new ColorSwap();
 		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);

@@ -1115,23 +1115,32 @@ class PlayState extends MusicBeatState
 		FlxG.fixedTimestep = false;
 		moveCameraSection();
 
-		healthBarBG = new AttachedSprite('healthBar');
+		healthBarBG = new AttachedSprite('healthBarBar');
 		healthBarBG.y = FlxG.height * 0.89;
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		healthBarBG.visible = !ClientPrefs.hideHud;
-		healthBarBG.xAdd = -4;
-		healthBarBG.yAdd = -4;
-		add(healthBarBG);
+		healthBarBG.xAdd = -48;
+		healthBarBG.yAdd = -8;
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
-		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
+		healthBar = new FlxBar(healthBarBG.x + 48, healthBarBG.y + 8, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 125), Std.int(healthBarBG.height - 16), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		// healthBar
 		healthBar.visible = !ClientPrefs.hideHud;
 		healthBar.alpha = ClientPrefs.healthBarAlpha;
+		
+		healthBack = new FlxSprite(healthBarBG.x,healthBarBG.y - 119).loadGraphic(Paths.image('healthBarNew'));
+		healthBack.screenCenter(X);
+		healthBack.scrollFactor.set();
+		healthBack.visible = !ClientPrefs.hideHud;
+		healthBack.alpha = ClientPrefs.healthBarAlpha;
+		
+		add(healthBack);
+		add(healthBarBG);
 		add(healthBar);
+		
 		healthBarBG.sprTracker = healthBar;
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
@@ -1169,6 +1178,7 @@ class PlayState extends MusicBeatState
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
+		healthBack.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
@@ -3992,7 +4002,6 @@ class PlayState extends MusicBeatState
 				if (storyPlaylist.length <= 0)
 				{
 					WeekData.loadTheFirstEnabledMod();
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
 					cancelMusicFadeTween();
 					if(FlxTransitionableState.skipNextTransIn) {
@@ -4000,6 +4009,9 @@ class PlayState extends MusicBeatState
 					}
 					if (curSong == 'Revelation'){ //after the last song!!
 						MusicBeatState.switchState(new SalamatScreen());
+						if (FlxG.save.data.beatenMainWeek == null){
+								FlxG.save.data.beatenMainWeek = [];
+						trace("VIBE CHECK");} //makes a save thing when the main song
 					}
 					else{
 						MusicBeatState.switchState(new StoryMenuState());

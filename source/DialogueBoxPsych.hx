@@ -173,6 +173,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	public var nextDialogueThing:Void->Void = null;
 	public var skipDialogueThing:Void->Void = null;
 	var bgFade:FlxSprite = null;
+	var bgBlack:FlxSprite = null;
 	var box:FlxSprite;
 	var textToType:String = '';
 	var background:FlxSprite;					  
@@ -186,6 +187,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	
 	var curCharacter:String = "";
 	var curSound:FlxSound;
+	var skipText:FlxText;
 	//var charPositionList:Array<String> = ['left', 'center', 'right'];
 
 	public function new(dialogueList:DialogueFile, ?song:String = null)
@@ -207,6 +209,17 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		bgFade.visible = true;
 		bgFade.alpha = 0;
 		add(bgFade);
+		
+		bgBlack = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+		bgBlack.scrollFactor.set();
+		bgBlack.visible = true;
+		bgBlack.alpha = 0;
+		add(bgBlack);
+		
+		if(PlayState.SONG.song == 'Revelation'){ //the reveal!!
+			bgBlack.alpha = 1;
+		}
+		
 		background = new FlxSprite(0,0);
 		background.loadGraphic(Paths.image('dialogue/bgs/cutscene1')); //placeholder
 		background.setGraphicSize(1280,720);
@@ -214,7 +227,14 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		background.screenCenter();
 		background.antialiasing = true;
 		add(background);
-		background.alpha = 0;						  		   
+		background.alpha = 0;	
+
+		skipText = new FlxText(5, 695, 640, "Press SHIFT to skip the dialogue.\n", 40);
+		skipText.scrollFactor.set(0, 0);
+		skipText.setFormat(Paths.font("GhostKidAOE.otf"), 30, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		skipText.borderSize = 2;
+		skipText.borderQuality = 1;
+		//add(skipText);		
 
 		this.dialogueList = dialogueList;
 		spawnCharacters();
@@ -484,6 +504,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 			background.alpha = 1;
 			background.antialiasing = true;
 			add(background);
+			remove(bgBlack);
 		}
 		else{
 			background.alpha = 0;

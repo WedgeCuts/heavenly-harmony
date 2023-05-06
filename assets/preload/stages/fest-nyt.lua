@@ -8,27 +8,19 @@ local followchars = true
 function onCreate()
 	-- background shit, reuse it and stuff if needed
 	makeLuaSprite('bg', 'bg/night-bg', -600, -200)
-	makeLuaSprite('stall11', 'bg/night-stall11', -600, -200)
-	makeLuaSprite('stall12', 'bg/night-stall12', -600, -200)
+	makeLuaSprite('stall1', 'bg/night-stall1', -600, -200)
 	makeLuaSprite('stall2', 'bg/night-stall2', -600, -200)
 	makeLuaSprite('stall3', 'bg/night-stall3', -600, -200)
 	makeLuaSprite('stage', 'bg/night-stage', -600, -200)
 	makeLuaSprite('banderitas', 'bg/night-yay', -600, -200)
 	setScrollFactor('banderitas', 0.3, 0.3)
 
-	makeLuaSprite('bopbg1', 'bg/bgboppers1', -600, -200)
-	makeLuaSprite('bopbg2', 'bg/bgboppers2', -600, -200)
-	makeLuaSprite('bopbg3', 'bg/bgboppers3', -600, -200)
 	makeLuaSprite('bopfg', 'bg/fgboppers', -600, -200)
 	
 	addLuaSprite('bg', false)
 	
 	addLuaSprite('stall2', false)
-	addLuaSprite('stall11', false)
-	addLuaSprite('bopbg2', false)
-	addLuaSprite('stall12', false)
-	addLuaSprite('bopbg1', false)
-	addLuaSprite('bopbg3', false)
+	addLuaSprite('stall1', false)
 	
 	addLuaSprite('stall3', false)
 	addLuaSprite('stage', false)
@@ -81,12 +73,6 @@ end
 
 function onBeatHit()
 	--BG chars boppin!
-	setProperty('bopbg1.y',getProperty('bopbg1.y')+5)
-	doTweenY('charbounce1','bopbg1',getProperty('bopbg1.y')-5,0.15,'circOut')
-	setProperty('bopbg2.y',getProperty('bopbg2.y')+5)
-	doTweenY('charbounce2','bopbg2',getProperty('bopbg2.y')-5,0.15,'circOut')
-	setProperty('bopbg3.y',getProperty('bopbg3.y')+5)
-	doTweenY('charbounce3','bopbg3',getProperty('bopbg3.y')-5,0.15,'circOut')
 	setProperty('bopfg.y',getProperty('bopfg.y')+20)
 	doTweenY('charbounce4','bopfg',getProperty('bopfg.y')-20,0.15,'circOut')
 end

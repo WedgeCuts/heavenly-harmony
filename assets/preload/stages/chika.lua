@@ -39,7 +39,7 @@ function onUpdate(elapsed)
 i = i + 1
 
 	DALAPSED = elapsed/0.016 --Thanks Holiday Mod Part II
-	speed = 2*DALAPSED
+	speed = 3*DALAPSED
 	
 	setProperty('mts.x',getProperty('mts.x')-speed)
 	if getProperty('mts.x') < -3280 then
