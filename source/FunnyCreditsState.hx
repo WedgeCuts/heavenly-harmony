@@ -233,13 +233,13 @@ class FunnyCreditsState extends MusicBeatState //Reusing CreditsState cuz BIG BR
 		nameText.borderSize = 1.2;
 		add(nameText);
 		
-		roleText = new FlxText(860, 460, 400, "", 35);
+		roleText = new FlxText(860, 440, 400, "", 30);
 		roleText.setFormat(Paths.font("Marker Felt.ttf"), 35, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		roleText.scrollFactor.set();
 		roleText.borderSize = 1.2;
 		add(roleText);
 
-		quoteText = new FlxText(860, 520, 400, "", 30);
+		quoteText = new FlxText(860, 540, 400, "", 30);
 		quoteText.setFormat(Paths.font("Marker Felt.ttf"), 30, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		quoteText.scrollFactor.set();
 		quoteText.borderSize = 1.2;
